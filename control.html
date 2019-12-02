@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="description" content="">
+      <meta name="author" content="">
+	  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	  <script type="text/javascript">
+		document.write([
+			"\<script src='",
+			("https:" == document.location.protocol) ? "https://" : "http://",
+			"ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js' type='text/javascript'>\<\/script>" 
+		].join(''));
+	  </script>
+	  <link async href="http://fonts.googleapis.com/css?family=Passero%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+	  <style>
+	  
+	  .textnew{
+display: block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+z-index: auto;
+width: auto;
+height: auto;
+position: static;
+cursor: pointer;
+opacity: 1;
+margin: 0;
+padding: 0;
+overflow: visible;
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+font: normal 45px/normal "Passero One", Helvetica, sans-serif;
+color: rgba(53,58,109,1);
+text-align: left;
+-o-text-overflow: clip;
+text-overflow: clip;
+background: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902) ;
+-webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+-moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+-o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+-webkit-transform: none;
+transform: none;
+-webkit-transform-origin: 50% 50% 0;
+transform-origin: 50% 50% 0;
+	  }
+	  .neon{display: inline-block;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+float: none;
+z-index: auto;
+width: auto;
+height: auto;
+position: static;
+cursor: default;
+margin: 0;
+padding: 10px;
+overflow: visible;
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+color: rgba(52,135,168,1);
+text-decoration: normal;
+text-align: center;
+-o-text-overflow: clip;
+text-overflow: clip;
+white-space: pre;
+background: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+-webkit-transform: none;
+transform: none;
+-webkit-transform-origin: 50% 50% 0;
+transform-origin: 50% 50% 0;
+	  }
+
+	  </style>
+	  
+
+      <title> Control Panel | IoT</title>
+	  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 
+   </head>
+
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Control Panel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="control.html">Control
+              <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="temp.html">Weather</a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="egg.php">Egg</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+	      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+              <br>
+              <br>
+              <br>
+            <h2 class="textnew">Switch</h2><br>
+              <form action="" method="get">
+              <label class="label label-lg" for="formGroupExampleInput">Connect Your Device</label>
+              <input type="text" class="form-control" id="ip" placeholder="Paste Your IP" style="width: 400px;">
+              <br>
+              <button type="button" id="Device-on" class="btn btn-outline-success btn-lg btn-block" onclick="JavaScript:alert('Device is ON')" style="width: 400px;">On</button>
+              <button type="button" id="Device-off" class="btn btn-outline-danger btn-lg btn-block" onclick="JavaScript:alert('Device is OFF')" style="width: 400px;">Off</button>
+              <br>
+              <textarea id="logger 1" class="ip" placeholder="LOGS" readonly></textarea>
+        </form><br>
+                       <form>
+  <div class="form-group">
+      <h2 class="mt-3">Setting Data</h2>
+  
+    <label class="label label-lg" for="formGroupExampleInput">Enter Data 1</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="input 1" style="width: 400px;">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Enter Data 2</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="input 2" style="width: 400px;"><br>
+      <button type="button" class="btn btn-info btn-lg btn-block" style="width: 400px;">Set</button>
+  </div>
+</form>
+          </div>
+   
+          <div class="col-lg-6">
+              <br>
+              <br>
+            <h2 class="mt-3 rounded neon">Switch for Light</h2>
+              <form action="" method="get">
+              <br>
+              <button type="button" id="D1-on" class="btn btn-success btn-lg" style="width: 190px;margin-right: 15px;">D1 On</button>
+              <button type="button" id="D1-off" class="btn btn-danger btn-lg" style="width: 190px;margin-right: 15px;">D1 Off</button><br><br>
+              <button type="button" id="D2-on" class="btn btn-success btn-lg" style="width: 190px;margin-right: 15px;">D2 On</button>
+              <button type="button" id="D2-off" class="btn btn-danger btn-lg" style="width: 190px;margin-right: 15px;">D2 Off</button><br><br>
+              <button type="button" id="D3-on" class="btn btn-success btn-lg" style="width: 190px;margin-right: 15px;">D3 On</button>
+              <button type="button" id="D3-off" class="btn btn-danger btn-lg" style="width: 190px;margin-right: 15px;">D3 Off</button><br><br>
+              <br>
+              <textarea id="logger" class="ip" placeholder="LOGS" readonly></textarea>
+        </form>
+          </div>
+   
+        </div>
+      </div>
+
+	<script>
+		document.getElementById('D1-on').addEventListener('click', function() {
+				var url = "http://localhost/api/led/update.php?id=1&status=on";
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+				logger.textContent="\nD1 is on\n" + document.getElementById("logger").value;
+				$.ajax(settings).done(function (response) {
+				});
+		});
+		
+		document.getElementById('D1-off').addEventListener('click', function() {
+				var url = "http://localhost/api/led/update.php?id=1&status=off";
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+				logger.textContent="\nD1 is off\n" + document.getElementById("logger").value;
+				$.ajax(settings).done(function (response) {
+				});
+		});
+		
+		
+		document.getElementById('D2-on').addEventListener('click', function() {
+				var url = "http://localhost/api/led/update.php?id=2&status=on";
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D2-off').addEventListener('click', function() {
+				var url = "http://localhost/api/led/update.php?id=2&status=off";
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		
+		document.getElementById('D3-on').addEventListener('click', function() {
+				var url = "http://localhost/api/led/update.php?id=3&status=on";
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D3-off').addEventListener('click', function() {
+				var url = "http://localhost/api/led/update.php?id=3&status=off";
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+
+		
+	</script>
+</html>
